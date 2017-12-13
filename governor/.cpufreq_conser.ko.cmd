@@ -1,0 +1,1 @@
+cmd_/home/odroid/testmodule/governor/cpufreq_conser.ko := ld -EL -r  -T /home/odroid/linux/scripts/module-common.lds --build-id  -o /home/odroid/testmodule/governor/cpufreq_conser.ko /home/odroid/testmodule/governor/cpufreq_conser.o /home/odroid/testmodule/governor/cpufreq_conser.mod.o
