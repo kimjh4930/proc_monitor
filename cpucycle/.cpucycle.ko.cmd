@@ -1,0 +1,1 @@
+cmd_/home/odroid/testmodule/cpucycle/cpucycle.ko := ld -EL -r  -T /home/odroid/linux/scripts/module-common.lds --build-id  -o /home/odroid/testmodule/cpucycle/cpucycle.ko /home/odroid/testmodule/cpucycle/cpucycle.o /home/odroid/testmodule/cpucycle/cpucycle.mod.o
