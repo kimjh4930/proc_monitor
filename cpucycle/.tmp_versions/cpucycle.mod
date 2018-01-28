@@ -1,2 +1,3 @@
-/home/odroid/testmodule/cpucycle/cpucycle.ko
-/home/odroid/testmodule/cpucycle/cpucycle.o
+/home/odroid/proc_monitor/cpucycle/cpucycle.ko
+/home/odroid/proc_monitor/cpucycle/cpucycle.o
+

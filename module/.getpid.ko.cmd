@@ -1,1 +1,0 @@
-cmd_/home/odroid/testmodule/module/getpid.ko := ld -EL -r  -T /home/odroid/linux/scripts/module-common.lds --build-id  -o /home/odroid/testmodule/module/getpid.ko /home/odroid/testmodule/module/getpid.o /home/odroid/testmodule/module/getpid.mod.o

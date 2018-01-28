@@ -1,2 +1,2 @@
-kernel//home/odroid/testmodule/module/getpid.ko
-kernel//home/odroid/testmodule/module/monitor.ko
+kernel//home/odroid/proc_monitor/module/getpid_4.ko
+kernel//home/odroid/proc_monitor/module/monitor.ko

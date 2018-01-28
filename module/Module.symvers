@@ -1,2 +1,2 @@
-0x00000000	get_PID	/home/odroid/testmodule/module/getpid	EXPORT_SYMBOL
-0x00000000	set_PID	/home/odroid/testmodule/module/getpid	EXPORT_SYMBOL
+0x00000000	get_PID	/home/odroid/proc_monitor/module/getpid_4	EXPORT_SYMBOL
+0x00000000	set_PID	/home/odroid/proc_monitor/module/getpid_4	EXPORT_SYMBOL

@@ -1,2 +1,3 @@
-/home/odroid/testmodule/module/monitor.ko
-/home/odroid/testmodule/module/monitor.o
+/home/odroid/proc_monitor/module/monitor.ko
+/home/odroid/proc_monitor/module/monitor.o
+

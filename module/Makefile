@@ -1,6 +1,6 @@
 KERNELDIR = /home/odroid/linux
 
-obj-m = getpid.o monitor.o
+obj-m = getpid_4.o monitor.o
 
 KDIR := /home/odroid/linux
 PWD := $(shell pwd)

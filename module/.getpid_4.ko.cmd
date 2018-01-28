@@ -1,0 +1,1 @@
+cmd_/home/odroid/proc_monitor/module/getpid_4.ko := ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/odroid/proc_monitor/module/getpid_4.ko /home/odroid/proc_monitor/module/getpid_4.o /home/odroid/proc_monitor/module/getpid_4.mod.o ;  true
