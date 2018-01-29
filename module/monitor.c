@@ -63,9 +63,9 @@ static void pid_monitor(unsigned long data){
 		se = task->se;
 		statistics = se.statistics;
 
-		printk(KERN_INFO"[monitor] execl : %llu\n", se.sum_exec_cycle);
-                printk(KERN_INFO"[monitor] slpcl : %llu\n", statistics.sleep_sum_cycle);
-                printk(KERN_INFO"[monitor] blkcl : %llu\n", statistics.block_sum_cycle);
+		//printk(KERN_INFO"[monitor] execl : %llu\n", se.sum_exec_cycle);
+                //printk(KERN_INFO"[monitor] slpcl : %llu\n", statistics.sleep_sum_cycle);
+                //printk(KERN_INFO"[monitor] blkcl : %llu\n", statistics.block_sum_cycle);
 
 		//cputime = task->cputime_expires;
 
@@ -89,6 +89,8 @@ static void pid_monitor(unsigned long data){
 			printk(KERN_INFO"[monitor] execl : %llu\n", se.sum_exec_cycle);
 			printk(KERN_INFO"[monitor] slpcl : %llu\n", statistics.sleep_sum_cycle);
 			printk(KERN_INFO"[monitor] blkcl : %llu\n", statistics.block_sum_cycle);
+
+			printk(KERN_INFO"[monitor] waitcnt : %llu\n", statistics.iowait_count);
 			set_PID(0);
 		}
 	}
