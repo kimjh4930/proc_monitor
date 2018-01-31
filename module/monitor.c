@@ -90,7 +90,7 @@ static void pid_monitor(unsigned long data){
 			printk(KERN_INFO"[monitor] slpcl : %llu\n", statistics.sleep_sum_cycle);
 			printk(KERN_INFO"[monitor] blkcl : %llu\n", statistics.block_sum_cycle);
 
-			printk(KERN_INFO"[monitor] waitcnt : %llu\n", statistics.iowait_count);
+			printk(KERN_INFO"[monitor] waitcnt : %llu\n", statistics.wait_count);
 			set_PID(0);
 		}
 	}
