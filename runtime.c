@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 
 	printf("%s\n", argv[1]);
 
-        return execl(argv[1], argv[1], NULL); // run other program
+        return execl(argv[1], argv[1], argv[2], NULL); // run other program
     }
     else if (pid > 0){
         timeout.tv_sec = 10;
