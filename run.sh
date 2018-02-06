@@ -7,8 +7,8 @@ echo userspace > /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
 
 for cpu in ${cpufreq[*]};
 do
-	echo 300000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
-	echo 300000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
+	echo 200000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
+	echo 200000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
 
 	sleep 5
 
@@ -32,9 +32,10 @@ do
 	#{ time "./sysbench.sh"; } 2> time.txt
 	#{ time "./cpubomb.sh"; } 2> time.txt
 
-	./runtime ./run/cpubomb_10 1
+	{ time "./cpubomb.sh"; } 2> time.txt
 
-	echo 300000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
-	echo 300000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
+	echo 200000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
+	echo 200000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
 done
 
+sleep 5
