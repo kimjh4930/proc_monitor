@@ -1,1 +1,1 @@
-./run/cpubomb_100 4
+./run/cpubomb_$1 4

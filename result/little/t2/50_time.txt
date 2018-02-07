@@ -1,0 +1,78 @@
+cpubomb_50
+
+real	0m14.094s
+user	0m11.730s
+sys	0m0.035s
+==========
+cpubomb_50
+
+real	0m14.542s
+user	0m12.630s
+sys	0m0.045s
+==========
+cpubomb_50
+
+real	0m15.051s
+user	0m13.610s
+sys	0m0.080s
+==========
+cpubomb_50
+
+real	0m15.683s
+user	0m14.880s
+sys	0m0.075s
+==========
+cpubomb_50
+
+real	0m16.841s
+user	0m16.285s
+sys	0m0.110s
+==========
+cpubomb_50
+
+real	0m17.317s
+user	0m18.160s
+sys	0m0.050s
+==========
+cpubomb_50
+
+real	0m18.480s
+user	0m20.450s
+sys	0m0.085s
+==========
+cpubomb_50
+
+real	0m20.045s
+user	0m23.150s
+sys	0m0.400s
+==========
+cpubomb_50
+
+real	0m21.909s
+user	0m27.160s
+sys	0m0.120s
+==========
+cpubomb_50
+
+real	0m24.737s
+user	0m32.725s
+sys	0m0.105s
+==========
+cpubomb_50
+
+real	0m28.797s
+user	0m40.845s
+sys	0m0.135s
+==========
+cpubomb_50
+
+real	0m35.904s
+user	0m54.665s
+sys	0m0.220s
+==========
+cpubomb_50
+
+real	0m50.173s
+user	1m22.370s
+sys	0m0.365s
+==========
