@@ -1,2 +1,4 @@
 0x00000000	get_PID	/home/odroid/proc_monitor/module/getpid_4	EXPORT_SYMBOL
 0x00000000	set_PID	/home/odroid/proc_monitor/module/getpid_4	EXPORT_SYMBOL
+0x00000000	read_instruction	/home/odroid/proc_monitor/module/ipc	EXPORT_SYMBOL
+0x00000000	read_cycle	/home/odroid/proc_monitor/module/ipc	EXPORT_SYMBOL

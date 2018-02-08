@@ -1,1 +1,3 @@
 0x00000000	get_Cycles	/home/odroid/testmodule/cpucycle/cpucycle	EXPORT_SYMBOL
+0x00000000	read_instruction	/home/odroid/proc_monitor/cpucycle/ipc	EXPORT_SYMBOL
+0x00000000	read_cycle	/home/odroid/proc_monitor/cpucycle/ipc	EXPORT_SYMBOL

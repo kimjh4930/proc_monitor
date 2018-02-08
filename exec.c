@@ -18,10 +18,10 @@ int main(int argc, char* argv[]){
 
 		fprintf(stderr, "%d", getpid());
 
-		execl("./iozone", "./iozone", "-a", "-s", "4G", "-g", "4G", "-r", "16M", "-i", "0", "-i", "1", NULL);
+		//execl("./iozone", "./iozone", "-a", "-s", "4G", "-g", "4G", "-r", "16M", "-i", "0", "-i", "1", NULL);
 		//execl("./iozone","./iozone"," -a -s 2G -g 2G -r 16M -i 0 -i 1",NULL);
 
-		//execl("./cpubomb", "./cpubomb", NULL);
+		execl("./run/cpubomb_100", "./run/cpubomb_100", "1", NULL);
 		exit(1);
 	}else{
 		getTimeDiff(0);

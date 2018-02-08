@@ -1,2 +1,4 @@
 kernel//home/odroid/proc_monitor/module/getpid_4.ko
 kernel//home/odroid/proc_monitor/module/monitor.ko
+kernel//home/odroid/proc_monitor/module/cpucycle.ko
+kernel//home/odroid/proc_monitor/module/ipc.ko

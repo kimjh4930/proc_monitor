@@ -1,6 +1,6 @@
 KERNELDIR = /home/odroid/linux
 
-obj-m = cpucycle.o
+obj-m = cpucycle.o ipc.o
 
 KDIR := /home/odroid/linux
 PWD := $(shell pwd)

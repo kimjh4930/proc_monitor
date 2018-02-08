@@ -1,1 +1,2 @@
 kernel//home/odroid/proc_monitor/cpucycle/cpucycle.ko
+kernel//home/odroid/proc_monitor/cpucycle/ipc.ko
