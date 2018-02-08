@@ -1,1 +1,0 @@
-cmd_/home/odroid/proc_monitor/module/monitor.ko := ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/odroid/proc_monitor/module/monitor.ko /home/odroid/proc_monitor/module/monitor.o /home/odroid/proc_monitor/module/monitor.mod.o ;  true

@@ -1,1 +1,1 @@
-./run/cpubomb_$1 4
+./exec 2> /proc/taskpid

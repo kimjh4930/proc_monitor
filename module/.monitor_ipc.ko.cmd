@@ -1,0 +1,1 @@
+cmd_/home/odroid/proc_monitor/module/monitor_ipc.ko := ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/odroid/proc_monitor/module/monitor_ipc.ko /home/odroid/proc_monitor/module/monitor_ipc.o /home/odroid/proc_monitor/module/monitor_ipc.mod.o ;  true

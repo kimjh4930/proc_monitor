@@ -21,7 +21,8 @@ int main(int argc, char* argv[]){
 		//execl("./iozone", "./iozone", "-a", "-s", "4G", "-g", "4G", "-r", "16M", "-i", "0", "-i", "1", NULL);
 		//execl("./iozone","./iozone"," -a -s 2G -g 2G -r 16M -i 0 -i 1",NULL);
 
-		execl("./run/cpubomb_100", "./run/cpubomb_100", "1", NULL);
+		//execl("./run/cpubomb_100", "./run/cpubomb_100", "1", NULL);
+		execl(argv[1], argv[1], "1", NULL);
 		exit(1);
 	}else{
 		getTimeDiff(0);

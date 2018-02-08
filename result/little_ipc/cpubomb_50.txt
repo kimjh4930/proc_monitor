@@ -1,0 +1,52 @@
+200000
+[ 9691.852427] [monitor] pid : 3991
+[ 9691.852469] total_cycle : 717222461187	total_inst : 617693120517
+[ 9696.955046] [taskpid] taskpid_proc_write()
+[ 9747.712565] [monitor] pid : 3998
+[ 9747.712606] total_cycle : 725857581180	total_inst : 625121624451
+300000
+[ 9752.823649] [taskpid] taskpid_proc_write()
+[ 9788.772745] [monitor] pid : 4005
+[ 9788.772774] total_cycle : 734301306972	total_inst : 632452743613
+400000
+[ 9793.860081] [taskpid] taskpid_proc_write()
+[ 9822.772941] [monitor] pid : 4013
+[ 9822.772963] total_cycle : 742713388491	total_inst : 639766491738
+500000
+[ 9827.848464] [taskpid] taskpid_proc_write()
+[ 9852.753046] [monitor] pid : 4020
+[ 9852.753066] total_cycle : 751248689446	total_inst : 647131131422
+600000
+[ 9857.821272] [taskpid] taskpid_proc_write()
+[ 9879.763201] [monitor] pid : 4027
+[ 9879.763219] total_cycle : 759647607229	total_inst : 654428616312
+700000
+[ 9884.824330] [taskpid] taskpid_proc_write()
+[ 9904.843329] [monitor] pid : 4034
+[ 9904.843345] total_cycle : 768045779853	total_inst : 661721952448
+800000
+[ 9909.904939] [taskpid] taskpid_proc_write()
+[ 9928.423444] [monitor] pid : 4041
+[ 9928.423459] total_cycle : 776571504009	total_inst : 669054844035
+900000
+[ 9933.484897] [taskpid] taskpid_proc_write()
+[ 9950.833570] [monitor] pid : 4053
+[ 9950.833584] total_cycle : 784991768277	total_inst : 676341538811
+1000000
+[ 9955.890175] [taskpid] taskpid_proc_write()
+[ 9972.343668] [monitor] pid : 4060
+[ 9972.343681] total_cycle : 793523371253	total_inst : 683661432926
+1100000
+[ 9977.401067] [taskpid] taskpid_proc_write()
+[ 9993.093787] [monitor] pid : 4067
+[ 9993.093800] total_cycle : 801962310834	total_inst : 690944142720
+1200000
+[ 9998.148186] [taskpid] taskpid_proc_write()
+[10013.193882] [monitor] pid : 4074
+[10013.193895] total_cycle : 810418818740	total_inst : 698224546616
+1300000
+[10018.248749] [taskpid] taskpid_proc_write()
+[10032.833991] [monitor] pid : 4081
+[10032.834003] total_cycle : 819038614006	total_inst : 705561467308
+1400000
+[10037.890281] [taskpid] taskpid_proc_write()

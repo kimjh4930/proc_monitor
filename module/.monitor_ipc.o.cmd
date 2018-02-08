@@ -1,8 +1,8 @@
-cmd_/home/odroid/proc_monitor/module/ipc.o := gcc -Wp,-MD,/home/odroid/proc_monitor/module/.ipc.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/5/include -I./arch/arm/include -I./arch/arm/include/generated/uapi -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -fno-dwarf2-cfi-asm -fno-ipa-sra -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -DCC_HAVE_ASM_GOTO -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -fno-var-tracking-assignments -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types  -DMODULE  -DKBUILD_BASENAME='"ipc"'  -DKBUILD_MODNAME='"ipc"' -c -o /home/odroid/proc_monitor/module/ipc.o /home/odroid/proc_monitor/module/ipc.c
+cmd_/home/odroid/proc_monitor/module/monitor_ipc.o := gcc -Wp,-MD,/home/odroid/proc_monitor/module/.monitor_ipc.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/5/include -I./arch/arm/include -I./arch/arm/include/generated/uapi -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -fno-dwarf2-cfi-asm -fno-ipa-sra -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -DCC_HAVE_ASM_GOTO -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -fno-var-tracking-assignments -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types  -DMODULE  -DKBUILD_BASENAME='"monitor_ipc"'  -DKBUILD_MODNAME='"monitor_ipc"' -c -o /home/odroid/proc_monitor/module/monitor_ipc.o /home/odroid/proc_monitor/module/monitor_ipc.c
 
-source_/home/odroid/proc_monitor/module/ipc.o := /home/odroid/proc_monitor/module/ipc.c
+source_/home/odroid/proc_monitor/module/monitor_ipc.o := /home/odroid/proc_monitor/module/monitor_ipc.c
 
-deps_/home/odroid/proc_monitor/module/ipc.o := \
+deps_/home/odroid/proc_monitor/module/monitor_ipc.o := \
   include/linux/module.h \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/sysfs.h) \
@@ -443,6 +443,11 @@ deps_/home/odroid/proc_monitor/module/ipc.o := \
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
+  include/linux/pid.h \
+  include/linux/pid_namespace.h \
+    $(wildcard include/config/proc/fs.h) \
+    $(wildcard include/config/bsd/process/acct.h) \
+    $(wildcard include/config/pid/ns.h) \
   include/linux/sched.h \
     $(wildcard include/config/sched/debug.h) \
     $(wildcard include/config/lockup/detector.h) \
@@ -450,7 +455,6 @@ deps_/home/odroid/proc_monitor/module/ipc.o := \
     $(wildcard include/config/core/dump/default/elf/headers.h) \
     $(wildcard include/config/virt/cpu/accounting/native.h) \
     $(wildcard include/config/sched/autogroup.h) \
-    $(wildcard include/config/bsd/process/acct.h) \
     $(wildcard include/config/taskstats.h) \
     $(wildcard include/config/audit.h) \
     $(wildcard include/config/inotify/user.h) \
@@ -493,7 +497,6 @@ deps_/home/odroid/proc_monitor/module/ipc.o := \
     $(wildcard include/config/arch/wants/dynamic/task/struct.h) \
     $(wildcard include/config/have/unstable/sched/clock.h) \
     $(wildcard include/config/irq/time/accounting.h) \
-    $(wildcard include/config/proc/fs.h) \
     $(wildcard include/config/stack/growsup.h) \
     $(wildcard include/config/have/copy/thread/tls.h) \
     $(wildcard include/config/have/exit/thread.h) \
@@ -548,7 +551,6 @@ deps_/home/odroid/proc_monitor/module/ipc.o := \
   arch/arm/include/generated/asm/siginfo.h \
   include/asm-generic/siginfo.h \
   include/uapi/asm-generic/siginfo.h \
-  include/linux/pid.h \
   include/linux/seccomp.h \
     $(wildcard include/config/seccomp.h) \
     $(wildcard include/config/have/arch/seccomp/filter.h) \
@@ -605,43 +607,6 @@ deps_/home/odroid/proc_monitor/module/ipc.o := \
     $(wildcard include/config/cgroup/hugetlb.h) \
     $(wildcard include/config/cgroup/pids.h) \
     $(wildcard include/config/cgroup/debug.h) \
-  include/linux/slab.h \
-    $(wildcard include/config/debug/slab.h) \
-    $(wildcard include/config/failslab.h) \
-    $(wildcard include/config/have/hardened/usercopy/allocator.h) \
-    $(wildcard include/config/slab.h) \
-    $(wildcard include/config/slub.h) \
-  include/linux/kmemleak.h \
-    $(wildcard include/config/debug/kmemleak.h) \
-  include/linux/kasan.h \
-  include/linux/syscalls.h \
-    $(wildcard include/config/ftrace/syscalls.h) \
-    $(wildcard include/config/old/sigsuspend.h) \
-    $(wildcard include/config/old/sigsuspend3.h) \
-    $(wildcard include/config/odd/rt/sigaction.h) \
-    $(wildcard include/config/clone/backwards.h) \
-    $(wildcard include/config/clone/backwards3.h) \
-  include/uapi/linux/aio_abi.h \
-  include/linux/quota.h \
-    $(wildcard include/config/quota/netlink/interface.h) \
-  include/linux/percpu_counter.h \
-  include/uapi/linux/dqblk_xfs.h \
-  include/linux/dqblk_v1.h \
-  include/linux/dqblk_v2.h \
-  include/linux/dqblk_qtree.h \
-  include/linux/projid.h \
-  include/uapi/linux/quota.h \
-  include/trace/syscall.h \
-    $(wildcard include/config/have/syscall/tracepoints.h) \
-  include/linux/tracepoint.h \
-    $(wildcard include/config/tracepoint.h) \
-  include/linux/tracepoint-defs.h \
-  include/linux/static_key.h \
-  include/linux/trace_events.h \
-    $(wildcard include/config/bpf/events.h) \
-  include/linux/ring_buffer.h \
-    $(wildcard include/config/ring/buffer/allow/swap.h) \
-  include/linux/kmemcheck.h \
   include/linux/mm.h \
     $(wildcard include/config/have/arch/mmap/rnd/bits.h) \
     $(wildcard include/config/have/arch/mmap/rnd/compat/bits.h) \
@@ -676,6 +641,8 @@ deps_/home/odroid/proc_monitor/module/ipc.o := \
     $(wildcard include/config/memory/failure.h) \
     $(wildcard include/config/swap.h) \
     $(wildcard include/config/ksm.h) \
+  include/linux/tracepoint-defs.h \
+  include/linux/static_key.h \
   arch/arm/include/asm/pgtable.h \
     $(wildcard include/config/highpte.h) \
   arch/arm/include/asm/proc-fns.h \
@@ -726,199 +693,9 @@ deps_/home/odroid/proc_monitor/module/ipc.o := \
     $(wildcard include/config/migration.h) \
     $(wildcard include/config/memory/balloon.h) \
     $(wildcard include/config/balloon/compaction.h) \
-  include/linux/seq_file.h \
-  include/linux/fs.h \
-    $(wildcard include/config/fs/posix/acl.h) \
-    $(wildcard include/config/cgroup/writeback.h) \
-    $(wildcard include/config/ima.h) \
-    $(wildcard include/config/fsnotify.h) \
-    $(wildcard include/config/fs/encryption.h) \
-    $(wildcard include/config/file/locking.h) \
-    $(wildcard include/config/quota.h) \
-    $(wildcard include/config/fs/dax.h) \
-    $(wildcard include/config/mandatory/file/locking.h) \
-  include/linux/kdev_t.h \
-  include/uapi/linux/kdev_t.h \
-  include/linux/dcache.h \
-  include/linux/rculist_bl.h \
-  include/linux/list_bl.h \
-  include/linux/lockref.h \
-    $(wildcard include/config/arch/use/cmpxchg/lockref.h) \
-  include/linux/stringhash.h \
-    $(wildcard include/config/dcache/word/access.h) \
-  include/linux/hash.h \
-    $(wildcard include/config/have/arch/hash.h) \
-  include/linux/path.h \
-  include/linux/list_lru.h \
-  include/linux/radix-tree.h \
-    $(wildcard include/config/radix/tree/multiorder.h) \
-  include/linux/semaphore.h \
-  include/uapi/linux/fiemap.h \
-  include/linux/migrate_mode.h \
-  include/linux/blk_types.h \
-    $(wildcard include/config/blk/dev/integrity.h) \
-  include/linux/bvec.h \
-  include/linux/delayed_call.h \
-  include/uapi/linux/fs.h \
-  include/uapi/linux/ioctl.h \
-  arch/arm/include/generated/asm/ioctl.h \
-  include/asm-generic/ioctl.h \
-  include/uapi/asm-generic/ioctl.h \
-  include/linux/nfs_fs_i.h \
-  include/linux/fcntl.h \
-  include/uapi/linux/fcntl.h \
-  arch/arm/include/uapi/asm/fcntl.h \
-  include/uapi/asm-generic/fcntl.h \
-  include/linux/poll.h \
-  arch/arm/include/asm/uaccess.h \
-    $(wildcard include/config/have/efficient/unaligned/access.h) \
-    $(wildcard include/config/cpu/sw/domain/pan.h) \
-    $(wildcard include/config/cpu/use/domains.h) \
-    $(wildcard include/config/uaccess/with/memcpy.h) \
-  arch/arm/include/asm/domain.h \
-    $(wildcard include/config/io/36.h) \
-    $(wildcard include/config/cpu/cp15/mmu.h) \
-  include/uapi/linux/poll.h \
-  arch/arm/include/generated/asm/poll.h \
-  include/uapi/asm-generic/poll.h \
-  include/linux/trace_seq.h \
-  include/linux/seq_buf.h \
-  include/linux/hardirq.h \
-  include/linux/ftrace_irq.h \
-    $(wildcard include/config/ftrace/nmi/enter.h) \
-    $(wildcard include/config/hwlat/tracer.h) \
-  include/linux/vtime.h \
-  include/linux/context_tracking_state.h \
-    $(wildcard include/config/context/tracking.h) \
-  arch/arm/include/asm/hardirq.h \
-  arch/arm/include/asm/irq.h \
-    $(wildcard include/config/sparse/irq.h) \
-    $(wildcard include/config/multi/irq/handler.h) \
-  include/linux/irq_cpustat.h \
-  include/linux/perf_event.h \
-    $(wildcard include/config/function/tracer.h) \
-    $(wildcard include/config/cpu/sup/intel.h) \
-  include/uapi/linux/perf_event.h \
-  arch/arm/include/asm/perf_event.h \
-  arch/arm/include/generated/asm/local64.h \
-  include/asm-generic/local64.h \
-  include/linux/pid_namespace.h \
-    $(wildcard include/config/pid/ns.h) \
   include/linux/nsproxy.h \
   include/linux/ns_common.h \
-  include/linux/ftrace.h \
-    $(wildcard include/config/dynamic/ftrace/with/regs.h) \
-    $(wildcard include/config/dynamic/ftrace.h) \
-    $(wildcard include/config/stack/tracer.h) \
-    $(wildcard include/config/frame/pointer.h) \
-    $(wildcard include/config/function/profiler.h) \
-  include/linux/trace_clock.h \
-  arch/arm/include/generated/asm/trace_clock.h \
-  include/asm-generic/trace_clock.h \
-  include/linux/kallsyms.h \
-  include/linux/ptrace.h \
-  include/uapi/linux/ptrace.h \
-  arch/arm/include/asm/ftrace.h \
-    $(wildcard include/config/old/mcount.h) \
-  include/linux/cpu.h \
-    $(wildcard include/config/pm/sleep/smp.h) \
-  include/linux/node.h \
-    $(wildcard include/config/memory/hotplug/sparse.h) \
-  include/linux/device.h \
-    $(wildcard include/config/debug/devres.h) \
-    $(wildcard include/config/generic/msi/irq/domain.h) \
-    $(wildcard include/config/pinctrl.h) \
-    $(wildcard include/config/generic/msi/irq.h) \
-    $(wildcard include/config/dma/cma.h) \
-    $(wildcard include/config/of.h) \
-    $(wildcard include/config/devtmpfs.h) \
-    $(wildcard include/config/sysfs/deprecated.h) \
-  include/linux/ioport.h \
-  include/linux/klist.h \
-  include/linux/pinctrl/devinfo.h \
-    $(wildcard include/config/pm.h) \
-  include/linux/pinctrl/consumer.h \
-  include/linux/pinctrl/pinctrl-state.h \
-  include/linux/pm.h \
-    $(wildcard include/config/vt/console/sleep.h) \
-    $(wildcard include/config/pm/clk.h) \
-    $(wildcard include/config/pm/generic/domains.h) \
-  include/linux/ratelimit.h \
-  arch/arm/include/asm/device.h \
-    $(wildcard include/config/dmabounce.h) \
-    $(wildcard include/config/iommu/api.h) \
-    $(wildcard include/config/arm/dma/use/iommu.h) \
-    $(wildcard include/config/arch/omap.h) \
-  include/linux/pm_wakeup.h \
-  include/linux/cpuhotplug.h \
-  include/linux/irq_work.h \
-    $(wildcard include/config/irq/work.h) \
-  arch/arm/include/asm/irq_work.h \
-  arch/arm/include/asm/smp_plat.h \
-  arch/arm/include/asm/cpu.h \
-  arch/arm/include/asm/cputype.h \
-    $(wildcard include/config/cpu/cp15.h) \
-    $(wildcard include/config/cpu/pj4.h) \
-  include/linux/jump_label_ratelimit.h \
-  include/linux/perf_regs.h \
-    $(wildcard include/config/have/perf/regs.h) \
-  arch/arm/include/uapi/asm/perf_regs.h \
-  include/linux/cgroup.h \
-    $(wildcard include/config/cgroup/data.h) \
-  include/uapi/linux/cgroupstats.h \
-  include/uapi/linux/taskstats.h \
-  include/linux/user_namespace.h \
-    $(wildcard include/config/persistent/keyrings.h) \
-  arch/arm/include/generated/asm/local.h \
-  include/asm-generic/local.h \
-  include/linux/io.h \
-    $(wildcard include/config/has/ioport/map.h) \
-  arch/arm/include/asm/io.h \
-    $(wildcard include/config/pci.h) \
-    $(wildcard include/config/need/mach/io/h.h) \
-    $(wildcard include/config/pcmcia/soc/common.h) \
-    $(wildcard include/config/isa.h) \
-    $(wildcard include/config/pccard.h) \
-  include/asm-generic/pci_iomap.h \
-    $(wildcard include/config/no/generic/pci/ioport/map.h) \
-    $(wildcard include/config/generic/pci/iomap.h) \
-  include/xen/xen.h \
-    $(wildcard include/config/xen.h) \
-    $(wildcard include/config/xen/dom0.h) \
-    $(wildcard include/config/xen/pvh.h) \
-  include/asm-generic/io.h \
-    $(wildcard include/config/generic/iomap.h) \
-    $(wildcard include/config/virt/to/bus.h) \
-  include/linux/vmalloc.h \
-  include/linux/interrupt.h \
-    $(wildcard include/config/irq/forced/threading.h) \
-    $(wildcard include/config/generic/irq/probe.h) \
-  include/linux/irqreturn.h \
-  include/linux/irqnr.h \
-  include/uapi/linux/irqnr.h \
-  include/linux/platform_device.h \
-    $(wildcard include/config/suspend.h) \
-    $(wildcard include/config/hibernate/callbacks.h) \
-  include/linux/mod_devicetable.h \
-  include/linux/uuid.h \
-  include/uapi/linux/uuid.h \
-  include/linux/of.h \
-    $(wildcard include/config/sparc.h) \
-    $(wildcard include/config/of/dynamic.h) \
-    $(wildcard include/config/attach/node.h) \
-    $(wildcard include/config/detach/node.h) \
-    $(wildcard include/config/add/property.h) \
-    $(wildcard include/config/remove/property.h) \
-    $(wildcard include/config/update/property.h) \
-    $(wildcard include/config/of/numa.h) \
-    $(wildcard include/config/no/change.h) \
-    $(wildcard include/config/change/add.h) \
-    $(wildcard include/config/change/remove.h) \
-    $(wildcard include/config/of/resolve.h) \
-    $(wildcard include/config/of/overlay.h) \
-  include/linux/property.h \
-  include/linux/fwnode.h \
 
-/home/odroid/proc_monitor/module/ipc.o: $(deps_/home/odroid/proc_monitor/module/ipc.o)
+/home/odroid/proc_monitor/module/monitor_ipc.o: $(deps_/home/odroid/proc_monitor/module/monitor_ipc.o)
 
-$(deps_/home/odroid/proc_monitor/module/ipc.o):
+$(deps_/home/odroid/proc_monitor/module/monitor_ipc.o):

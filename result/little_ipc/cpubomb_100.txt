@@ -1,0 +1,54 @@
+200000
+[11219.811209] [monitor] pid : 4506
+[11219.811250] total_cycle : 1265432731556	total_inst : 1092414656280
+[11224.911427] [taskpid] taskpid_proc_write()
+[11265.321422] [monitor] pid : 4513
+[11265.321462] total_cycle : 1273512676578	total_inst : 1099532652557
+300000
+[11270.433517] [taskpid] taskpid_proc_write()
+[11297.141502] [monitor] pid : 4520
+[11297.141532] total_cycle : 1281522647612	total_inst : 1106605428618
+400000
+[11302.228252] [taskpid] taskpid_proc_write()
+[11321.891620] [monitor] pid : 4527
+[11321.891644] total_cycle : 1289386626369	total_inst : 1113617190778
+500000
+[11326.965933] [taskpid] taskpid_proc_write()
+[11342.631741] [monitor] pid : 4534
+[11342.631762] total_cycle : 1297216608257	total_inst : 1120616717471
+600000
+[11347.694097] [taskpid] taskpid_proc_write()
+[11360.941837] [monitor] pid : 4541
+[11360.941855] total_cycle : 1305160589031	total_inst : 1127668489260
+700000
+[11366.005232] [taskpid] taskpid_proc_write()
+[11377.161928] [monitor] pid : 4548
+[11377.161945] total_cycle : 1312965572534	total_inst : 1134656159504
+800000
+[11382.223052] [taskpid] taskpid_proc_write()
+[11391.972010] [monitor] pid : 4555
+[11391.972026] total_cycle : 1320757559122	total_inst : 1141639353209
+900000
+[11397.030711] [taskpid] taskpid_proc_write()
+[11405.692087] [monitor] pid : 4562
+[11405.692102] total_cycle : 1328541296882	total_inst : 1148619067800
+1000000
+[11410.749796] [taskpid] taskpid_proc_write()
+[11418.662135] [monitor] pid : 4569
+[11418.662149] total_cycle : 1336440886820	total_inst : 1155637114025
+1100000
+[11423.721390] [taskpid] taskpid_proc_write()
+[11430.802229] [monitor] pid : 4581
+[11430.802242] total_cycle : 1344215770460	total_inst : 1162612743898
+1200000
+[11435.856658] [taskpid] taskpid_proc_write()
+[11442.342293] [monitor] pid : 4588
+[11442.342306] total_cycle : 1351991746005	total_inst : 1169585392570
+1300000
+[11447.397884] [taskpid] taskpid_proc_write()
+[11453.382350] [monitor] pid : 4595
+[11453.382363] total_cycle : 1359765717774	total_inst : 1176555538192
+1400000
+[11458.437895] [taskpid] taskpid_proc_write()
+[11464.002417] [monitor] pid : 4602
+[11464.002429] total_cycle : 1367549676971	total_inst : 1183528822733

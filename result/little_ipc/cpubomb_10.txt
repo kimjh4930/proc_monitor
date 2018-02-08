@@ -1,0 +1,50 @@
+200000
+[ 6939.627789] [taskpid] taskpid_proc_write()
+[ 7054.707291] [monitor] pid : 3518
+[ 7054.707332] total_cycle : 270574193265	total_inst : 240591986045
+300000
+[ 7059.817090] [taskpid] taskpid_proc_write()
+[ 7160.012908] [monitor] pid : 3526
+[ 7160.012938] total_cycle : 279696571987	total_inst : 248182963087
+400000
+[ 7165.095577] [taskpid] taskpid_proc_write()
+[ 7258.223486] [monitor] pid : 3538
+[ 7258.223511] total_cycle : 288718174116	total_inst : 255702043609
+500000
+[ 7263.296177] [taskpid] taskpid_proc_write()
+[ 7352.279042] [monitor] pid : 3561
+[ 7352.279063] total_cycle : 297819523479	total_inst : 263245353189
+600000
+[ 7357.341923] [taskpid] taskpid_proc_write()
+[ 7443.449577] [monitor] pid : 3568
+[ 7443.449595] total_cycle : 306807434570	total_inst : 270716627980
+700000
+[ 7448.509156] [taskpid] taskpid_proc_write()
+[ 7532.630106] [monitor] pid : 3575
+[ 7532.630124] total_cycle : 316016610145	total_inst : 278263854159
+800000
+[ 7537.689264] [taskpid] taskpid_proc_write()
+900000
+[ 7620.295603] [monitor] pid : 3592
+[ 7620.295618] total_cycle : 325104866195	total_inst : 285738843821
+[ 7625.352027] [taskpid] taskpid_proc_write()
+[ 7706.826104] [monitor] pid : 3604
+[ 7706.826119] total_cycle : 334431543040	total_inst : 293283428160
+1000000
+[ 7711.886348] [taskpid] taskpid_proc_write()
+[ 7792.441623] [monitor] pid : 3617
+[ 7792.441636] total_cycle : 343650821724	total_inst : 300775779309
+1100000
+[ 7797.498420] [taskpid] taskpid_proc_write()
+[ 7877.347127] [monitor] pid : 3629
+[ 7877.347141] total_cycle : 352958964241	total_inst : 308277447312
+1200000
+[ 7882.401168] [taskpid] taskpid_proc_write()
+1300000
+[ 7961.607690] [monitor] pid : 3641
+[ 7961.607731] total_cycle : 362244175599	total_inst : 315764488224
+[ 7966.659913] [taskpid] taskpid_proc_write()
+[ 8045.308104] [monitor] pid : 3648
+[ 8045.308116] total_cycle : 371498899759	total_inst : 323221713252
+1400000
+[ 8050.362003] [taskpid] taskpid_proc_write()

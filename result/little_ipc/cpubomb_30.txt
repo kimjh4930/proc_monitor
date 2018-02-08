@@ -1,0 +1,52 @@
+200000
+[ 8792.092432] [monitor] pid : 3787
+[ 8792.092472] total_cycle : 494608262085	total_inst : 426799466033
+[ 8797.194812] [taskpid] taskpid_proc_write()
+[ 8858.042750] [monitor] pid : 3794
+[ 8858.042791] total_cycle : 503300760589	total_inst : 434248149328
+300000
+[ 8863.155290] [taskpid] taskpid_proc_write()
+[ 8909.423000] [monitor] pid : 3802
+[ 8909.423030] total_cycle : 511937804826	total_inst : 441653041928
+400000
+[ 8914.501583] [taskpid] taskpid_proc_write()
+[ 8953.673222] [monitor] pid : 3809
+[ 8953.673246] total_cycle : 520542827731	total_inst : 449052765910
+500000
+[ 8958.747258] [taskpid] taskpid_proc_write()
+[ 8993.613438] [monitor] pid : 3816
+[ 8993.613458] total_cycle : 529031649649	total_inst : 456383004607
+600000
+[ 8998.674380] [taskpid] taskpid_proc_write()
+[ 9030.753625] [monitor] pid : 3823
+[ 9030.753643] total_cycle : 537659543207	total_inst : 463760221703
+700000
+[ 9035.819489] [taskpid] taskpid_proc_write()
+[ 9065.893818] [monitor] pid : 3840
+[ 9065.893834] total_cycle : 546157657869	total_inst : 471078961994
+800000
+[ 9070.955013] [taskpid] taskpid_proc_write()
+[ 9099.574001] [monitor] pid : 3847
+[ 9099.574016] total_cycle : 554750631429	total_inst : 478428747705
+900000
+[ 9104.632673] [taskpid] taskpid_proc_write()
+1000000
+[ 9132.164167] [monitor] pid : 3854
+[ 9132.164181] total_cycle : 563400028086	total_inst : 485798649490
+[ 9137.217682] [taskpid] taskpid_proc_write()
+[ 9163.754342] [monitor] pid : 3861
+[ 9163.754355] total_cycle : 571946529334	total_inst : 493113453062
+1100000
+[ 9168.809641] [taskpid] taskpid_proc_write()
+1200000
+[ 9194.604762] [monitor] pid : 3868
+[ 9194.604803] total_cycle : 580601056405	total_inst : 500459519269
+[ 9199.656227] [taskpid] taskpid_proc_write()
+[ 9224.814663] [monitor] pid : 3875
+[ 9224.814675] total_cycle : 589158780734	total_inst : 507763893050
+1300000
+[ 9229.868819] [taskpid] taskpid_proc_write()
+1400000
+[ 9254.544912] [monitor] pid : 3882
+[ 9254.544953] total_cycle : 597884766497	total_inst : 515126370174
+[ 9259.594346] [taskpid] taskpid_proc_write()

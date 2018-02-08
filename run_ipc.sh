@@ -1,13 +1,15 @@
 #!/bin/bash
 
-cpufreq=( 1400000 1300000 1200000 1100000 1000000 900000 800000 700000 600000 500000 400000 300000 200000 )
+cpufreq=( 200000 300000 400000 500000 600000 700000 800000 900000 1000000 1100000 1200000 1300000 1400000 )
 
-util=( 100 90 80 70 60 50 40 30 20 10 )
+#util=( 10 20 30 40 50 60 70 80 90 100 )
+
+cpubomb=( cpubomb_10 cpubomb_20 cpubomb_30 cpubomb_40 cpubomb_50 cpubomb_60 cpubomb_70 cpubomb_80 cpubomb_90 cpubomb_100 )
 
 echo userspace > /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
 echo userspace > /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
 
-for u in ${util[*]};
+for cpubomb in ${cpubomb[*]};
 do
 	for cpu in ${cpufreq[*]};
 	do
@@ -17,29 +19,22 @@ do
 		sleep 5
 	
 		#set CPUFREQ
-		echo ${cpu} > /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
+		#echo ${cpu} > /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
 		echo ${cpu} > /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
 	
-		echo "=========================="
-		cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq
-		cat /sys/devices/system/cpu/cpu1/cpufreq/cpuinfo_cur_freq
-		cat /sys/devices/system/cpu/cpu2/cpufreq/cpuinfo_cur_freq
-		cat /sys/devices/system/cpu/cpu3/cpufreq/cpuinfo_cur_freq
+		#cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq
 		cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_cur_freq
-		cat /sys/devices/system/cpu/cpu5/cpufreq/cpuinfo_cur_freq
-		cat /sys/devices/system/cpu/cpu6/cpufreq/cpuinfo_cur_freq
-		cat /sys/devices/system/cpu/cpu7/cpufreq/cpuinfo_cur_freq
 	
 		#do benchmark
-	
-		#{ time "./iozone.sh"; } 2> time.txt
-		#{ time "./sysbench.sh"; } 2> time.txt
 
-		echo cpubomb_${u} >> ./result/big/t1/${u}_time.txt
-		{ time ./run/cpubomb_${u} 1 ; } 2> time.txt
-		cat time.txt >> ./result/big/t1/${u}_time.txt
-		echo "==========" >> ./result/big/t1/${u}_time.txt
-	
+		echo ${cpubomb}
+		cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_cur_freq >> ./result/big_ipc/${cpubomb}.txt
+		./exec "./run/${cpubomb}" 2> /proc/taskpid
+		dmesg -c >> ./result/big_ipc/${cpubomb}.txt
+		dmesg -c >> ./result/big_ipc/${cpubomb}.txt
+
+		echo "=========================="
+		
 		echo 200000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
 		echo 200000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
 	done
