@@ -1,78 +1,114 @@
 cpubomb_60
 
-real	0m9.338s
-user	0m3.855s
-sys	0m0.020s
+real	0m46.827s
+user	0m41.780s
+sys	0m0.155s
 ==========
 cpubomb_60
 
-real	0m9.631s
-user	0m4.160s
-sys	0m0.005s
+real	0m47.146s
+user	0m41.620s
+sys	0m0.165s
 ==========
 cpubomb_60
 
-real	0m9.994s
-user	0m4.445s
-sys	0m0.090s
-==========
-cpubomb_60
-
-real	0m10.375s
-user	0m4.870s
-sys	0m0.030s
-==========
-cpubomb_60
-
-real	0m10.873s
-user	0m5.365s
-sys	0m0.025s
-==========
-cpubomb_60
-
-real	0m11.466s
-user	0m5.940s
-sys	0m0.035s
-==========
-cpubomb_60
-
-real	0m12.224s
-user	0m6.700s
-sys	0m0.030s
-==========
-cpubomb_60
-
-real	0m13.180s
-user	0m7.640s
-sys	0m0.035s
-==========
-cpubomb_60
-
-real	0m14.470s
-user	0m8.885s
+real	0m17.994s
+user	0m13.635s
 sys	0m0.065s
 ==========
 cpubomb_60
 
-real	0m16.332s
-user	0m10.695s
-sys	0m0.035s
-==========
-cpubomb_60
-
-real	0m19.018s
-user	0m13.365s
-sys	0m0.080s
-==========
-cpubomb_60
-
-real	0m23.748s
-user	0m17.820s
+real	0m15.225s
+user	0m10.845s
 sys	0m0.100s
 ==========
 cpubomb_60
 
-real	0m32.861s
-user	0m26.870s
-sys	0m0.130s
+real	0m13.382s
+user	0m8.945s
+sys	0m0.165s
+==========
+cpubomb_60
+
+real	0m12.076s
+user	0m7.745s
+sys	0m0.070s
+==========
+cpubomb_60
+
+real	0m11.101s
+user	0m6.815s
+sys	0m0.030s
+==========
+cpubomb_60
+
+real	0m10.334s
+user	0m6.050s
+sys	0m0.030s
+==========
+cpubomb_60
+
+real	0m9.733s
+user	0m5.440s
+sys	0m0.045s
+==========
+cpubomb_60
+
+real	0m9.238s
+user	0m4.880s
+sys	0m0.110s
+==========
+cpubomb_60
+
+real	0m8.820s
+user	0m4.540s
+sys	0m0.040s
+==========
+cpubomb_60
+
+real	0m8.470s
+user	0m4.185s
+sys	0m0.045s
+==========
+cpubomb_60
+
+real	0m8.175s
+user	0m3.900s
+sys	0m0.035s
+==========
+cpubomb_60
+
+real	0m7.914s
+user	0m3.595s
+sys	0m0.085s
+==========
+cpubomb_60
+
+real	0m7.693s
+user	0m3.375s
+sys	0m0.080s
+==========
+cpubomb_60
+
+real	0m7.494s
+user	0m3.225s
+sys	0m0.035s
+==========
+cpubomb_60
+
+real	0m7.314s
+user	0m3.050s
+sys	0m0.025s
+==========
+cpubomb_60
+
+real	0m7.152s
+user	0m2.845s
+sys	0m0.075s
+==========
+cpubomb_60
+
+real	0m7.007s
+user	0m2.685s
+sys	0m0.090s
 ==========

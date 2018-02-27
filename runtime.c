@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
         return execl(argv[1], argv[1], argv[2], NULL); // run other program
     }
     else if (pid > 0){
-        timeout.tv_sec = 10;
+        timeout.tv_sec = 5;
         timeout.tv_nsec = 0;
   
         do{
